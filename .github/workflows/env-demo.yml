@@ -5,16 +5,10 @@ on: [push]
 env:
   GREETING: "Hi"
 
-huenv:
-  HUITING: "Huy"
-
 jobs:
   print-greeting:
     runs-on: ubuntu-latest
     steps:
       - name: Print Greetings
         run: echo "${{ env.GREETING }}, World!"
-
-      - name: Print HUITING
-        run: echo "${{ huenv.HUITING }}, World!"
 
